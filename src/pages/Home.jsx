@@ -16,7 +16,7 @@ import './MoviesGrid.css';
       };
     
       useEffect(() => {
-        const topRatedUrl = `${moviesURL}?${apiKey}${apiLang}`;
+        const topRatedUrl = `${moviesURL}popular?${apiKey}${apiLang}`;
         getTopRatedMovies(topRatedUrl);
       }, []);
   
